@@ -9,14 +9,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="4dp">
+        android:layout_margin="4dp"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnBuscar"
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Buscar" />
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText_codigo_cidade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Informe o Código"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buscar" />
+        </LinearLayout>
 
 
         <TextView
@@ -24,21 +39,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cidade: "
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/fragment_clima_textview_temp_atual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Temperatura atual: "
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/fragment_clima_textview_umidade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Umidade: "
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
 
         <androidx.recyclerview.widget.RecyclerView
@@ -48,7 +63,7 @@
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabTrocarCidade"
+        android:id="@+id/fab_buscar_previsao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
