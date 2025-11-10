@@ -102,4 +102,4 @@ app/src/main/
 - OkHttp 5.3.0
 - Gson 2.13.2
 
-Desenvido por Adriana C H Antunes :)
+Desenvolvido por Adriana C H Antunes :)
