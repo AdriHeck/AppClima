@@ -101,11 +101,5 @@ app/src/main/
 - Material Components
 - OkHttp 5.3.0
 - Gson 2.13.2
-- Testes básicos: JUnit, AndroidX Test, Espresso.
 
-Configurações Gradle relevantes (`app/build.gradle`):
-- `compileSdk` 36
-- `minSdk` 24
-- `targetSdk` 36
-- `JavaVersion` 11
-
+Desenvido por Adriana C H Antunes :)
